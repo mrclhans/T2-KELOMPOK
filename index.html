@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan *858#</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Layanan *858#</h1>
+        <div id="menu">
+            <p id="output">Pilih menu:</p>
+            <ul>
+                <li onclick="transferPulsa()">1. Transfer Pulsa</li>
+                <li onclick="cekSaldo()">2. Cek Saldo</li>
+                <li onclick="beliPaket()">3. Beli Paket Data</li>
+                <li onclick="keluar()">4. Keluar</li>
+            </ul>
+        </div>
+        <div id="action" class="hidden">
+            <p id="actionOutput"></p>
+            <input type="text" id="userInput" placeholder="Masukkan Input">
+            <button onclick="submitAction()">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
